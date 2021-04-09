@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab6_1</title>
+
+    <style>
+        * {
+            margin: 0;
+            font-family: "Arial", sans-serif;
+        }
+
+        .body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .mainform {
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+
+            background-color: rgb(35,48,59);
+
+            width: 300px;
+            height: 360px;
+        }
+
+        .signupbox {
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 20px;
+            
+            width: 130px;
+            height: 30px;
+
+            background-color: rgb(25,176,136);
+        }
+        
+        .signupbox p {
+            vertical-align: center;
+            text-align: center;
+            color: white;
+            padding-top: 6px;
+        }
+        
+        .loginbox {
+            display: inline-block;
+            margin-top: 20px;
+
+            width: 130px;
+            height: 30px;
+
+            background-color: rgb(67,80,88);
+        }
+        
+        .loginbox p {
+            vertical-align: center;
+            text-align: center;
+            color: white;
+            padding-top: 6px;
+        }
+
+        .signuptext {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        .firstnamebox {
+            display: inline-block;
+            width: 115px;
+            height: 25px;
+            
+            border: 2px solid rgb(96,112,116);
+
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+
+        .firstnamebox input{
+            width: 111px;
+            height: 23px;
+            background-color: rgb(67,80,88);
+            border: none;
+        }
+
+        .secondnamebox {
+            display: inline-block;
+            width: 115px;
+            height: 25px;
+            
+            border: 2px solid rgb(96,112,116);
+
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+
+        .secondnamebox input{
+            width: 111px;
+            height: 23px;
+            background-color: rgb(67,80,88);
+            border: none;
+        }
+
+        .emailbox {
+            width: 260px;
+            height: 25px;
+            
+            border: 2px solid rgb(96,112,116);
+
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+
+        .emailbox input{
+            width: 256px;
+            height: 23px;
+            background-color: rgb(67,80,88);
+            border: none;
+        }
+
+        .passbox {
+            width: 260px;
+            height: 25px;
+            
+            border: 2px solid rgb(96,112,116);
+
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+
+        .passbox input{
+            width: 256px;
+            height: 23px;
+            background-color: rgb(67,80,88);
+            border: none;
+        }
+
+        .submitbox {
+            width: 265px;
+            height: 40px;
+
+            background-color: rgb(25,176,136);
+
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .submitbox p {
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            padding-top: 9px;
+        }
+
+        .required:after
+        {
+            color: red;
+            content: " *";
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div class="mainform">
+        <div class="signupbox">
+            <p>Sign Up</p>
+        </div>
+        <div class="loginbox">
+            <p>Log In</p>
+        </div>
+        <h1 class="signuptext">
+            Sign up for Free
+        </h1>
+        <div class="firstnamebox">
+            <input type="text" name="firstname" placeholder="First Name" required="required">
+        </div>
+        <div class="secondnamebox">
+            <input type="text" name="secondname" placeholder="Second Name*">
+        </div>
+        <div class="emailbox">
+            <input type="text" name="email" placeholder="Email Address*">
+        </div>
+        <div class="passbox">
+            <input type="password" name="password" placeholder="Set A Password*">
+        </div>
+        <div class="submitbox">
+            <p>GET STARTED</p>
+        </div>
+    </div>
+</body>
+
+</html>

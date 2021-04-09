@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab6_1</title>
+
+    <style>
+        * {
+            margin: 0;
+            font-family: "Arial", sans-serif;
+        }
+
+        .body {
+            background-color: rgb(68, 124, 230);
+        }
+
+        .mainform {
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+
+            background-color: white;
+
+            width: 300px;
+            height: 360px;
+
+            border: 6px solid rgb(68, 124, 230);
+            border-radius: 15px;
+        }
+
+        .logintext {
+            font-size: 50px;
+            text-align: center;
+            color: grey;
+
+            margin-top: 30px;
+        }
+
+        .usernamebox {
+            background-color: rgb(236, 235, 235);
+            
+            box-sizing: content-box;
+            border:3px solid rgb(236, 235, 235);
+            border-radius: 4px;
+
+            width: 254px;
+            height: 45px;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+
+        .passwordbox {
+            background-color: rgb(236, 235, 235);
+            
+            box-sizing: content-box;
+            border:3px solid rgb(236, 235, 235);
+            border-radius: 4px;
+
+            width: 254px;
+            height: 45px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .loginbox {
+            background-color: rgb(68, 124, 230);
+            
+            box-sizing: content-box;
+            border:3px solid rgb(68, 124, 230);
+            border-radius: 4px;
+
+            width: 254px;
+            height: 55px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .loginbox p {
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            vertical-align: auto;
+            margin-top: 10px;
+        }
+
+        .lostyourpasstext {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 15px;
+            text-decoration: underline;
+        }
+
+        input {
+            padding: 0;
+            border-width: 0;
+            background: rgb(236, 235, 235);
+            width: 254px;
+            height: 45px;
+
+            text-align: center;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div class="mainform">
+        <h1 class="logintext">
+            Login
+        </h1>
+        <div class="usernamebox">
+            <input type="text" name="username" placeholder="username">
+        </div>
+        <div class="passwordbox">
+            <input type="password" name="password" placeholder="password">
+        </div>
+        <div class="loginbox">
+            <p>
+                login
+            </p>
+        </div>
+        <div class="lostyourpasstext">
+            <p>
+                Lost your password?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
